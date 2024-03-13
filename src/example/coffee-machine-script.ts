@@ -1,36 +1,36 @@
 // Ex. 1: declare variables and use them
-let milkAmount: number = 50
+let MilkAmount: number = 50
 let coffeeAmount: number = 100
 let hasSyrup: boolean = true
 let hasIce: boolean = true
 
-console.log(`Preparing coffee ${coffeeAmount} ml with ${milkAmount} ml of milk`)
+console.log(`Preparing coffee ${coffeeAmount} ml with ${MilkAmount} ml of milk`)
 
 // Ex. 1.1: declare const variable and demonstrate
-milkAmount = 150 // works ok, because let
+MilkAmount = 150 // works ok, because let
 const waterAmount: number = 100
 //waterAmount = 200 // does not work, because const
 
 
 // Ex. 2: create conditional statements
 if (hasSyrup && hasIce) {
-  console.log(`Preparing iced coffee ${coffeeAmount} ml with ${milkAmount} ml with syrup`)
+  console.log(`Preparing iced coffee ${coffeeAmount} ml with ${MilkAmount} ml with syrup`)
 } else if (hasIce) {
-  console.log(`Preparing iced coffee ${coffeeAmount} ml with ${milkAmount} ml`)
+  console.log(`Preparing iced coffee ${coffeeAmount} ml with ${MilkAmount} ml`)
 } else if (hasSyrup) {
-  console.log(`Preparing coffee ${coffeeAmount} ml with ${milkAmount} ml with syrup`)
+  console.log(`Preparing coffee ${coffeeAmount} ml with ${MilkAmount} ml with syrup`)
 }
 
 
 let coffeeTotalAmount: number = 150
-if (milkAmount + coffeeAmount > coffeeTotalAmount) {
+if (MilkAmount + coffeeAmount > coffeeTotalAmount) {
   console.log("Cannot make coffee, total amount is less that requested ingredients!")
 } else {
   console.log("All good, making your coffee!")
 }
 
-milkAmount = 100
-if (milkAmount + coffeeAmount > coffeeTotalAmount) {
+MilkAmount = 100
+if (MilkAmount + coffeeAmount > coffeeTotalAmount) {
   console.log("Cannot make coffee, total amount is less that requested ingredients!")
 } else {
   console.log("All good, making your coffee!")
@@ -39,7 +39,7 @@ if (milkAmount + coffeeAmount > coffeeTotalAmount) {
 // Ex. 3: create loops
 const numOfOrders: number = 5
 for (let i = 1; i <= numOfOrders; i++) {
-  console.log(`Preparing coffee nr. ${i} ${coffeeAmount} ml with ${milkAmount} ml of milk`)
+  console.log(`Preparing coffee nr. ${i} ${coffeeAmount} ml with ${MilkAmount} ml of milk`)
 }
 
 const coffeeAmounts: number[] = [100, 150, 200]
